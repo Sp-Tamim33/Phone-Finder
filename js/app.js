@@ -5,11 +5,13 @@ const searchButton = () => {
     inputFeild.value = '';
 
     // load API 
-    const url = `https://openapi.programming-hero.com/api/phones?search=${inputValue}`;
+    let url = `https://openapi.programming-hero.com/api/phones?search=${inputValue}`;
     // console.log(url);
+
     fetch(url)
         .then(res => res.json())
         .then(data => loadPhone(data.data))
+
 }
 
 // function for load Phones in website
