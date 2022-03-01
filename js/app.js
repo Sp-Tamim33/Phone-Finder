@@ -60,10 +60,10 @@ const loadDetails = (detail) => {
             <p class="card-title">Brand : <strong>${detail.brand}</strong></p>
             <li>${detail.mainFeatures.releaseDate}</li>
                 <div><strong>Features :</strong>
-                    <li>${detail.mainFeatures.storage}</li>
-                    <li>${detail.mainFeatures.displaySize}</li>
-                    <li>${detail.mainFeatures.chipSet}</li>
-                    <li>${detail.mainFeatures.memory}</li>
+                    <li><u>Storage</u> : ${detail.mainFeatures.storage}</li>
+                    <li><u>Display</u> : ${detail.mainFeatures.displaySize}</li>
+                    <li><u>Chipset</u> :${detail.mainFeatures.chipSet}</li>
+                    <li><u>Memory</u> : ${detail.mainFeatures.memory}</li>
                 </div>
                 <div class="mt-2"><strong>Sensors :</strong>
                     <li>${detail.mainFeatures.sensors[0]}</li>
@@ -72,12 +72,12 @@ const loadDetails = (detail) => {
                     <li>${detail.mainFeatures.sensors[3]}</li>
                 </div>
                 <div class="mt-2"><strong>Others :</strong>
-                    <li>${detail.others.WALN}</li>
-                    <li>${detail.others.Bluetooth}</li>
-                    <li>${detail.others.GPS}</li>
-                    <li>${detail.others.NFC}</li>
-                    <li>${detail.others.Radio}</li>
-                    <li>${detail.others.USB}</li>
+                    <li><u>WALN</u> : ${detail.others.WALN}</li>
+                    <li><u>Bluetooth</u> : ${detail.others.Bluetooth}</li>
+                    <li><u>Gps</u> : ${detail.others.GPS}</li>
+                    <li><u>NFC</u> : ${detail.others.NFC}</li>
+                    <li><u>Radio</u> : ${detail.others.Radio}</li>
+                    <li><u>USB</u> : ${detail.others.USB}</li>
                 </div>
             </div>
         </div>
